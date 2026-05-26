@@ -5,8 +5,6 @@ import { ContactSection } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 function App() {
-	const logoLayers = [1, 2, 5, 6, 7];
-
 	return (
 		<main className="bg-[#0a0a0a]">
 			<div className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-32 py-8 md:py-10">
@@ -15,14 +13,11 @@ function App() {
 					<header className="flex items-center gap-4 md:gap-6 mb-8 md:mb-12">
 						{/* Stacked Logo */}
 						<div className="relative w-14 h-14 md:w-20 md:h-20 shrink-0">
-							{logoLayers.map((layer) => (
-								<img
-									key={layer}
-									src={`/images/logo/Camada ${7}.png`}
-									alt={`Logo layer ${layer}`}
-									className="absolute inset-0 w-full h-full object-contain"
-								/>
-							))}
+							<img
+								src={`/images/logo/Camada 7.png`}
+								alt={`Logo`}
+								className="absolute inset-0 w-full h-full object-contain"
+							/>
 						</div>
 
 						<div className="flex flex-col justify-center gap-1.5 mt-[-10px]">

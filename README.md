@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Media Guide Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional da **Media Guide Agency** - agência criativa angolana especializada em branding, design, marketing digital, produção audiovisual e comunicação 360º.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **TypeScript 6**
+- **Vite 8** (bundler e dev server)
+- **Tailwind CSS v4** (estilização utilitária)
+- **Framer Motion 12** (animações scroll-triggered)
+- **ESLint + Prettier** (qualidade de código)
 
-## React Compiler
+## Pré-requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 20 ou 22
+- npm
 
-## Expanding the ESLint configuration
+## Começar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Abra [http://localhost:5173](http://localhost:5173) no navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Inicia servidor de desenvolvimento Vite |
+| `npm run build` | Typecheck (`tsc -b`) + bundler (`vite build`) |
+| `npm run preview` | Preview da build de produção |
+| `npm run lint` | ESLint em `.ts,.tsx` |
+| `npm run format` | Prettier em `src/` |
+
+## Estrutura
+
 ```
+src/
+├── main.tsx              # Ponto de entrada
+├── App.tsx               # Componente raiz (hero + seções)
+├── index.css             # Tailwind + tema (cores vermelho/amarelo)
+└── components/
+    ├── About/            # Quem somos + timeline + contadores
+    ├── Services/         # Serviços 360º
+    ├── Portfolio/        # Portfolio de projectos
+    ├── Contact/          # Contacto + valores
+    └── Footer/           # Rodapé
+```
+
+## CI/CD
+
+**GitHub Actions** - executa em push/PR para `main` (Node 20 e 22):
+
+1. `lint:check`
+2. `format:check`
+3. `build`
+
+## Deploy
+
+Automatizado via **Vercel** (projecto `mediaguideagency`). A detecção de framework Vite é automática.
