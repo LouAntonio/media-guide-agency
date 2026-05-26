@@ -39,24 +39,24 @@ const ContactSection: React.FC = () => {
 						className="flex flex-col"
 					>
 						<motion.div variants={itemVariants} className="mb-12">
-							<h3 className="text-vermelho tracking-[0.3em] uppercase text-sm font-semibold mb-4">
+							<h3 className="text-vermelho tracking-[0.2em] uppercase text-sm font-semibold mb-4">
 								FALE CONNOSCO
 							</h3>
-							<div className="font-hero text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none">
+							<div className="font-display text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none mb-4">
 								<span className="text-white">VAMOS </span>
 								<span className="text-amarelo">CRIAR</span>
 							</div>
-							<div className="h-1 w-16 bg-vermelho mt-6"></div>
+							<div className="h-1 w-[80px] bg-vermelho mt-4"></div>
 						</motion.div>
 
-						<div className="space-y-8 mb-16">
+						<div className="space-y-6 mb-16">
 							{/* Contact Items */}
-							<motion.div variants={itemVariants} className="flex items-start gap-6">
-								<div className="w-12 h-12 shrink-0 border border-vermelho/30 border-t-vermelho border-l-vermelho flex items-center justify-center text-vermelho text-xl">
+							<motion.div variants={itemVariants} className="flex items-start gap-4">
+								<div className="w-12 h-12 shrink-0 border border-[#222] flex items-center justify-center text-vermelho text-xl">
 									<div className="w-2 h-2 rounded-full bg-vermelho"></div>
 								</div>
 								<div className="flex flex-col pt-1">
-									<span className="text-[#6b6b6b] text-[11px] tracking-[0.25em] uppercase font-semibold mb-1">
+									<span className="text-[#6b6b6b] text-[11px] tracking-[0.2em] uppercase font-semibold mb-1">
 										LOCALIZAÇÃO
 									</span>
 									<span className="text-[#cccccc] text-sm md:text-base">
@@ -65,12 +65,12 @@ const ContactSection: React.FC = () => {
 								</div>
 							</motion.div>
 
-							<motion.div variants={itemVariants} className="flex items-start gap-6">
-								<div className="w-12 h-12 shrink-0 border border-vermelho/30 border-t-vermelho border-l-vermelho flex items-center justify-center text-vermelho font-semibold text-lg">
+							<motion.div variants={itemVariants} className="flex items-start gap-4">
+								<div className="w-12 h-12 shrink-0 border border-[#222] flex items-center justify-center text-vermelho font-semibold text-lg">
 									@
 								</div>
 								<div className="flex flex-col pt-1">
-									<span className="text-[#6b6b6b] text-[11px] tracking-[0.25em] uppercase font-semibold mb-1">
+									<span className="text-[#6b6b6b] text-[11px] tracking-[0.2em] uppercase font-semibold mb-1">
 										EMAIL
 									</span>
 									<span className="text-[#cccccc] text-sm md:text-base">
@@ -79,12 +79,12 @@ const ContactSection: React.FC = () => {
 								</div>
 							</motion.div>
 
-							<motion.div variants={itemVariants} className="flex items-start gap-6">
-								<div className="w-12 h-12 shrink-0 border border-vermelho/30 border-t-vermelho border-l-vermelho flex items-center justify-center text-vermelho font-semibold text-lg">
+							<motion.div variants={itemVariants} className="flex items-start gap-4">
+								<div className="w-12 h-12 shrink-0 border border-[#222] flex items-center justify-center text-vermelho font-semibold text-lg">
 									T
 								</div>
 								<div className="flex flex-col pt-1">
-									<span className="text-[#6b6b6b] text-[11px] tracking-[0.25em] uppercase font-semibold mb-1">
+									<span className="text-[#6b6b6b] text-[11px] tracking-[0.2em] uppercase font-semibold mb-1">
 										TELEFONE
 									</span>
 									<span className="text-[#cccccc] text-sm md:text-base">
@@ -93,12 +93,12 @@ const ContactSection: React.FC = () => {
 								</div>
 							</motion.div>
 
-							<motion.div variants={itemVariants} className="flex items-start gap-6">
-								<div className="w-12 h-12 shrink-0 border border-vermelho/30 border-t-vermelho border-l-vermelho flex items-center justify-center text-vermelho font-semibold text-lg">
+							<motion.div variants={itemVariants} className="flex items-start gap-4">
+								<div className="w-12 h-12 shrink-0 border border-[#222] flex items-center justify-center text-vermelho font-semibold text-lg">
 									W
 								</div>
 								<div className="flex flex-col pt-1">
-									<span className="text-[#6b6b6b] text-[11px] tracking-[0.25em] uppercase font-semibold mb-1">
+									<span className="text-[#6b6b6b] text-[11px] tracking-[0.2em] uppercase font-semibold mb-1">
 										WEBSITE
 									</span>
 									<span className="text-[#cccccc] text-sm md:text-base">
@@ -110,7 +110,7 @@ const ContactSection: React.FC = () => {
 
 						{/* Social Networks */}
 						<motion.div variants={itemVariants}>
-							<h4 className="text-vermelho tracking-[0.3em] uppercase text-sm font-semibold mb-6">
+							<h4 className="text-vermelho tracking-[0.2em] uppercase text-sm font-semibold mb-6">
 								REDES SOCIAIS
 							</h4>
 							<div className="flex gap-4">
@@ -118,7 +118,7 @@ const ContactSection: React.FC = () => {
 									<a
 										key={social}
 										href={`#${social.toLowerCase()}`}
-										className="w-14 h-14 border border-[#222222] flex items-center justify-center text-[#aaaaaa] text-xs font-semibold hover:border-white hover:text-white transition-all duration-300"
+										className="w-12 h-12 border border-[#222] flex items-center justify-center text-[#aaaaaa] text-xs font-semibold hover:border-white hover:text-white transition-all duration-300"
 									>
 										{social}
 									</a>
@@ -143,13 +143,13 @@ const ContactSection: React.FC = () => {
 							<h3 className="text-white text-2xl md:text-3xl font-bold tracking-wider uppercase mb-6">
 								TEM UM PROJECTO?
 							</h3>
-							<p className="text-[#f2f2f2] text-sm md:text-base leading-relaxed mb-10 opacity-90 max-w-sm">
+							<p className="text-[#f2f2f2] text-sm md:text-base leading-relaxed mb-10 max-w-sm">
 								Transformamos a sua visão em realidade. Somos especialistas em criar
-								campanhas que comunicam, convencem e convertem.
+								campanhãs que comunicam, convencem e convertem.
 							</p>
 							<a
 								href="#contacto"
-								className="text-amarelo font-bold tracking-[0.2em] uppercase text-sm hover:text-white transition-colors duration-300"
+								className="text-amarelo font-bold tracking-[0.15em] text-sm hover:text-white transition-colors duration-300"
 							>
 								www.mediaguideagency.com
 							</a>
@@ -158,9 +158,9 @@ const ContactSection: React.FC = () => {
 						{/* Values List */}
 						<motion.div
 							variants={slideInRightVariants}
-							className="border border-[#1a1a1a] bg-[#0d0d0d] p-10 md:p-12"
+							className="border border-[#1a1a1a] bg-[#0c0c0c] p-10 md:p-12"
 						>
-							<h4 className="text-vermelho tracking-[0.3em] uppercase text-sm font-semibold mb-8">
+							<h4 className="text-vermelho tracking-[0.2em] uppercase text-sm font-semibold mb-8">
 								OS NOSSOS VALORES
 							</h4>
 							<ul className="space-y-4">
@@ -175,7 +175,7 @@ const ContactSection: React.FC = () => {
 										key={idx}
 										className="flex items-center text-[#888888] text-sm md:text-base"
 									>
-										<span className="text-white mr-4 text-xs">✓</span>
+										<span className="text-[#888888] mr-4 text-xs">✓</span>
 										{value}
 									</li>
 								))}

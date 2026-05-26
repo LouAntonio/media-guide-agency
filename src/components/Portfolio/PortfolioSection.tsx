@@ -6,15 +6,17 @@ export const PortfolioSection: React.FC = () => {
 	return (
 		<section className="bg-[#0a0a0a] py-20 px-4 md:px-8 lg:px-16 w-full max-w-7xl mx-auto">
 			{/* Header */}
-			<div className="mb-16">
-				<p className="text-sm font-sans tracking-[0.25em] text-[--color-vermelho] uppercase font-bold mb-2">
+			<div className="mb-16 md:mb-24">
+				<span className="text-vermelho font-sans font-semibold tracking-[0.2em] text-sm uppercase block mb-3">
 					OS NOSSOS TRABALHOS
-				</p>
-				<h2 className="font-hero text-5xl md:text-6xl font-black tracking-tight inline-block mb-4">
-					<span className="text-white">PORT</span>
-					<span className="text-[--color-amarelo]">FOLIO</span>
+				</span>
+				<h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-wide flex flex-wrap">
+					<span className="relative">
+						PORT
+						<span className="absolute -bottom-2 md:-bottom-4 left-0 w-[80%] h-1 md:h-2 bg-vermelho"></span>
+					</span>
+					<span className="text-amarelo">FOLIO</span>
 				</h2>
-				<div className="w-[124px] md:w-[152px] h-[3px] bg-[--color-vermelho]" />
 			</div>
 
 			{/* Grid */}

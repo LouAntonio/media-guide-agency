@@ -17,21 +17,21 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ project }) => {
 			<div>
 				<div
 					className={clsx(
-						"h-1 w-12 mb-6",
-						project.lineColor === "vermelho"
-							? "bg-[--color-vermelho]"
-							: "bg-[--color-amarelo]",
+						"h-[3px] w-8 mb-4",
+						project.lineColor === "vermelho" ? "bg-vermelho" : "bg-amarelo",
 					)}
 				/>
-				<p className="text-[10px] md:text-xs tracking-[0.2em] text-[--color-amarelo] uppercase font-bold mb-3 font-sans">
+				<p className="text-[10px] md:text-xs tracking-[0.2em] text-amarelo uppercase font-semibold mb-3 font-sans">
 					{project.type}
 				</p>
-				<h3 className="font-hero text-lg md:text-xl leading-tight font-semibold tracking-wide whitespace-pre-line text-white">
+				<h3 className="font-sans text-base md:text-lg leading-snug font-bold tracking-wide whitespace-pre-line text-white/90">
 					{project.title}
 				</h3>
 			</div>
 
-			<div className="mt-12 text-[#666666] text-xs font-medium font-sans">{project.year}</div>
+			<div className="mt-8 text-[#444] text-[11px] md:text-xs font-semibold font-sans">
+				{project.year}
+			</div>
 		</div>
 	);
 };

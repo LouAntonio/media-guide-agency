@@ -25,15 +25,16 @@ export default function ServicesSection() {
 		<section className="bg-[#0a0a0a] text-white py-24 md:py-32 w-full border-t border-white/5 flex flex-col items-center">
 			<div className="w-full max-w-[1440px] px-6 md:px-12 lg:px-24">
 				{/* Section Header */}
-				<div className="mb-20">
-					<div className="flex items-center gap-3 mb-4">
-						<div className="w-8 h-[2px] bg-amarelo"></div>
-						<span className="text-amarelo text-[11px] md:text-xs font-semibold tracking-[0.3em] uppercase">
-							O que fazemos
+				<div className="mb-16 md:mb-24">
+					<span className="text-vermelho font-sans font-semibold tracking-[0.2em] text-sm uppercase block mb-3">
+						O QUE FAZEMOS
+					</span>
+					<h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-wide flex flex-wrap gap-x-4">
+						<span className="relative">
+							SERVIÇOS
+							<span className="absolute -bottom-2 md:-bottom-4 left-0 w-[80%] h-1 md:h-2 bg-vermelho"></span>
 						</span>
-					</div>
-					<h2 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-white mb-2">
-						Serviços
+						<span className="text-amarelo">360º</span>
 					</h2>
 				</div>
 
@@ -62,7 +63,7 @@ export default function ServicesSection() {
 									transition-colors duration-500 ease-out min-h-[320px] md:min-h-[380px]"
 							>
 								{/* Number Indicator */}
-								<div className="text-amarelo text-sm font-bold tracking-widest mb-10">
+								<div className="text-vermelho text-sm font-bold tracking-widest mb-10">
 									{service.id}
 								</div>
 

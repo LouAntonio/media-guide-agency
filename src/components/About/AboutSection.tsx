@@ -35,10 +35,10 @@ const timelineData = [
 ];
 
 const statsData = [
-	{ count: 100, suffix: "+", label: "CLIENTES" },
-	{ count: 7, suffix: "", label: "ANOS DE\nEXPERIÊNCIA" },
-	{ count: 200, suffix: "+", label: "PROJECTOS" },
-	{ count: 360, suffix: "º", label: "SOLUÇÕES\nINTEGRADAS" },
+	{ count: 100, suffix: "+", label: "CLIENTES", colorClass: "text-vermelho" },
+	{ count: 7, suffix: "", label: "ANOS DE\nEXPERIÊNCIA", colorClass: "text-amarelo" },
+	{ count: 200, suffix: "+", label: "PROJECTOS", colorClass: "text-vermelho" },
+	{ count: 360, suffix: "º", label: "SOLUÇÕES\nINTEGRADAS", colorClass: "text-amarelo" },
 ];
 
 const containerVariants = {
@@ -124,17 +124,19 @@ const AboutSection: React.FC = () => {
 						{/* Stats Grid */}
 						<motion.div
 							variants={containerVariants}
-							className="grid grid-cols-2 gap-4 mt-4"
+							className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4"
 						>
 							{statsData.map((stat, idx) => (
 								<motion.div
 									key={idx}
 									variants={itemVariants}
-									className="bg-[#141414] border border-[#222] p-8 flex flex-col justify-center
-                             hover:border-vermelho/30 transition-colors duration-500 rounded-sm group relative overflow-hidden"
+									className="bg-[#111] border border-vermelho/20 p-8 flex flex-col justify-center
+                             hover:border-vermelho/50 transition-colors duration-500 rounded-none group relative overflow-hidden"
 								>
 									<div className="absolute inset-0 bg-gradient-to-br from-vermelho/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-									<h3 className="font-display text-4xl md:text-5xl font-bold text-vermelho mb-2 flex items-center">
+									<h3
+										className={`font-display text-5xl md:text-6xl font-bold mb-4 flex items-center ${stat.colorClass}`}
+									>
 										<Counter
 											from={0}
 											to={stat.count}
@@ -142,7 +144,7 @@ const AboutSection: React.FC = () => {
 											suffix={stat.suffix}
 										/>
 									</h3>
-									<p className="font-sans text-xs md:text-sm tracking-[0.15em] text-cinza-claro/70 font-semibold uppercase whitespace-pre-line">
+									<p className="font-sans text-xs md:text-sm tracking-[0.2em] text-[#888] font-medium uppercase whitespace-pre-line">
 										{stat.label}
 									</p>
 								</motion.div>
