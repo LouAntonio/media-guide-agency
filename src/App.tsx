@@ -14,7 +14,7 @@ function App() {
 						{/* Stacked Logo */}
 						<div className="relative w-14 h-14 md:w-20 md:h-20 shrink-0">
 							<img
-								src={`/images/logo/Camada 7.png`}
+								src={`/images/logo/Camada 3.png`}
 								alt={`Logo`}
 								className="absolute inset-0 w-full h-full object-contain"
 							/>

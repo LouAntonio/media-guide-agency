@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 					{/* Small Stacked Logo */}
 					<div className="relative w-8 h-8 md:w-10 md:h-10 shrink-0">
 						<img
-							src={`/images/logo/Camada 7.png`}
+							src={`/images/logo/Camada 3.png`}
 							alt="Logo"
 							className="absolute inset-0 w-full h-full object-contain"
 						/>
