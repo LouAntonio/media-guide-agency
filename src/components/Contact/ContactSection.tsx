@@ -42,7 +42,7 @@ const ContactSection: React.FC = () => {
 							<h3 className="text-vermelho tracking-[0.2em] uppercase text-sm font-semibold mb-4">
 								FALE CONNOSCO
 							</h3>
-							<div className="font-display text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none mb-4">
+							<div className="font-display text-4xl md:text-6xl font-bold uppercase tracking-tight leading-none mb-4">
 								<span className="text-white">VAMOS </span>
 								<span className="text-amarelo">CRIAR</span>
 							</div>

@@ -29,7 +29,7 @@ export default function ServicesSection() {
 					<span className="text-vermelho font-sans font-semibold tracking-[0.2em] text-sm uppercase block mb-3">
 						O QUE FAZEMOS
 					</span>
-					<h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-wide flex flex-wrap gap-x-4">
+					<h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-wide flex flex-wrap gap-x-4">
 						<span className="relative">
 							SERVIÇOS
 							<span className="absolute -bottom-2 md:-bottom-4 left-0 w-[80%] h-1 md:h-2 bg-vermelho"></span>

@@ -10,7 +10,7 @@ export const PortfolioSection: React.FC = () => {
 				<span className="text-vermelho font-sans font-semibold tracking-[0.2em] text-sm uppercase block mb-3">
 					OS NOSSOS TRABALHOS
 				</span>
-				<h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-wide flex flex-wrap">
+				<h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-wide flex flex-wrap">
 					<span className="relative">
 						PORT
 						<span className="absolute -bottom-2 md:-bottom-4 left-0 w-[80%] h-1 md:h-2 bg-vermelho"></span>

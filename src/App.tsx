@@ -9,7 +9,7 @@ function App() {
 
 	return (
 		<main className="bg-[#0a0a0a]">
-			<div className="min-h-screen flex flex-col justify-between px-8 md:px-16 lg:px-32 py-8 md:py-10">
+			<div className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-32 py-8 md:py-10">
 				<div className="max-w-[1200px] w-full">
 					{/* Header - Logo and Brand Name */}
 					<header className="flex items-center gap-4 md:gap-6 mb-8 md:mb-12">
@@ -41,7 +41,7 @@ function App() {
 					</div>
 
 					{/* Hero Title */}
-					<div className="font-hero flex flex-col font-bold uppercase tracking-tighter text-[3.75rem] sm:text-[5rem] md:text-[6.5rem] lg:text-[8rem] leading-[0.85] mb-3 md:mb-4">
+					<div className="font-hero flex flex-col font-bold uppercase tracking-tighter text-[3.75rem] sm:text-[5rem] md:text-[6.5rem] lg:text-[6rem] leading-[0.85] mb-3 md:mb-4">
 						<div className="text-vermelho">Media</div>
 						<div className="text-amarelo mt-[-0.05em]">Guide</div>
 						<div className="text-white mt-[-0.05em]">Agency</div>
