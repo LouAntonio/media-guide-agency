@@ -1,6 +1,8 @@
 import AboutSection from "./components/About";
 import { ServicesSection } from "./components/Services";
 import { PortfolioSection } from "./components/Portfolio";
+import { ContactSection } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
 	const logoLayers = [1, 2, 5, 6, 7];
@@ -16,7 +18,7 @@ function App() {
 							{logoLayers.map((layer) => (
 								<img
 									key={layer}
-									src={`/images/logo/Camada ${layer}.png`}
+									src={`/images/logo/Camada ${7}.png`}
 									alt={`Logo layer ${layer}`}
 									className="absolute inset-0 w-full h-full object-contain"
 								/>
@@ -94,6 +96,8 @@ function App() {
 			<AboutSection />
 			<ServicesSection />
 			<PortfolioSection />
+			<ContactSection />
+			<Footer />
 		</main>
 	);
 }

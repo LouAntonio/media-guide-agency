@@ -7,13 +7,14 @@ export const PortfolioSection: React.FC = () => {
 		<section className="bg-[#0a0a0a] py-20 px-4 md:px-8 lg:px-16 w-full max-w-7xl mx-auto">
 			{/* Header */}
 			<div className="mb-16">
-				<p className="text-sm font-sans tracking-[0.25em] text-[#d40000] uppercase font-bold mb-2">
+				<p className="text-sm font-sans tracking-[0.25em] text-[--color-vermelho] uppercase font-bold mb-2">
 					OS NOSSOS TRABALHOS
 				</p>
-				<h2 className="font-hero text-5xl md:text-6xl font-black tracking-tight text-white inline-block mb-4">
-					PORTFOLIO<span className="text-[#ffc20e]">.</span>
+				<h2 className="font-hero text-5xl md:text-6xl font-black tracking-tight inline-block mb-4">
+					<span className="text-white">PORT</span>
+					<span className="text-[--color-amarelo]">FOLIO</span>
 				</h2>
-				<div className="w-16 h-1 bg-[--color-vermelho]" />
+				<div className="w-[124px] md:w-[152px] h-[3px] bg-[--color-vermelho]" />
 			</div>
 
 			{/* Grid */}

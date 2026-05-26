@@ -23,7 +23,7 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ project }) => {
 							: "bg-[--color-amarelo]",
 					)}
 				/>
-				<p className="text-[10px] md:text-xs tracking-[0.2em] text-[#b3b3b3] uppercase font-bold mb-3 font-sans">
+				<p className="text-[10px] md:text-xs tracking-[0.2em] text-[--color-amarelo] uppercase font-bold mb-3 font-sans">
 					{project.type}
 				</p>
 				<h3 className="font-hero text-lg md:text-xl leading-tight font-semibold tracking-wide whitespace-pre-line text-white">

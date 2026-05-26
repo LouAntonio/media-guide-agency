@@ -108,7 +108,7 @@ const AboutSection: React.FC = () => {
 							</motion.p>
 							<motion.p variants={itemVariants}>
 								Em 7 anos de actividade, já servimos mais de 100 clientes dos mais
-								variados sectores — de startups a grandes corporações — sempre com o
+								variados sectores - de startups a grandes corporações - sempre com o
 								mesmo compromisso:{" "}
 								<strong className="font-semibold text-amarelo">
 									criatividade com resultados.

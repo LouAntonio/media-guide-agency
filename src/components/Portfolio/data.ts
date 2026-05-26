@@ -11,7 +11,7 @@ export const portfolioData: PortfolioProject[] = [
 	{
 		id: "campanha-2024",
 		type: "AUDIOVISUAL · ACTIVAÇÃO",
-		title: "CAMPANHA NACIONAL 2024\n— PRODUÇÃO COMPLETA",
+		title: "CAMPANHA NACIONAL 2024\n- PRODUÇÃO COMPLETA",
 		year: "2024",
 		lineColor: "vermelho",
 		colSpan: 2,
@@ -75,7 +75,7 @@ export const portfolioData: PortfolioProject[] = [
 	{
 		id: "multicaixa",
 		type: "CAMPANHA DIGITAL · PERFORMANCE",
-		title: "LANÇAMENTO APP MULTICAIXA EXPRESS — ESTRATÉGIA 360º",
+		title: "LANÇAMENTO APP MULTICAIXA EXPRESS - ESTRATÉGIA 360º",
 		year: "2022",
 		lineColor: "vermelho",
 		colSpan: 2,
