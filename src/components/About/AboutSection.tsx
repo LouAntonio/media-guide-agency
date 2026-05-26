@@ -135,7 +135,7 @@ const AboutSection: React.FC = () => {
 								>
 									<div className="absolute inset-0 bg-gradient-to-br from-vermelho/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 									<h3
-										className={`font-display text-5xl md:text-6xl font-bold mb-4 flex items-center ${stat.colorClass}`}
+										className={`font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-1 md:mb-2 flex items-center ${stat.colorClass}`}
 									>
 										<Counter
 											from={0}
@@ -144,7 +144,7 @@ const AboutSection: React.FC = () => {
 											suffix={stat.suffix}
 										/>
 									</h3>
-									<p className="font-sans text-xs md:text-sm tracking-[0.2em] text-[#888] font-medium uppercase whitespace-pre-line">
+									<p className="font-sans text-[10px] md:text-xs tracking-[0.2em] text-[#888] font-medium uppercase whitespace-pre-line">
 										{stat.label}
 									</p>
 								</motion.div>

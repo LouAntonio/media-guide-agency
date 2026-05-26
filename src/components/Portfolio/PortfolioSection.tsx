@@ -4,7 +4,7 @@ import { PortfolioItem } from "./PortfolioItem";
 
 export const PortfolioSection: React.FC = () => {
 	return (
-		<section className="bg-[#0a0a0a] py-20 px-4 md:px-8 lg:px-16 w-full max-w-7xl mx-auto">
+		<section className="bg-[#0a0a0a] py-24 md:py-32 px-6 md:px-12 lg:px-24 w-full max-w-7xl mx-auto">
 			{/* Header */}
 			<div className="mb-16 md:mb-24">
 				<span className="text-vermelho font-sans font-semibold tracking-[0.2em] text-sm uppercase block mb-3">
