@@ -1,4 +1,5 @@
 import AboutSection from "./components/About";
+import { ServicesSection } from "./components/Services";
 
 function App() {
 	const logoLayers = [1, 2, 5, 6, 7];
@@ -90,6 +91,7 @@ function App() {
 				</div>
 			</div>
 			<AboutSection />
+			<ServicesSection />
 		</main>
 	);
 }
